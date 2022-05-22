@@ -3,6 +3,13 @@
 version = 3
 
 [[package]]
+name = "absurdle-best-guess"
+version = "0.1.0"
+dependencies = [
+ "wordle",
+]
+
+[[package]]
 name = "wordle"
 version = "0.1.0"
 

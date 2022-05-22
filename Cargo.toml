@@ -2,4 +2,5 @@
 members = [
     "wordle",
     "wordle-spoilers",
+    "absurdle-best-guess",
 ]
