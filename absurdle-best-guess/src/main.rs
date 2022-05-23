@@ -1,4 +1,4 @@
-use wordle::{Score, POSSIBLE_WORDS};
+use wordle::{Score, SETTABLE_WORDS};
 
 fn pass(lexicon: &[&'static str]) -> (&'static str, Vec<&'static str>) {
     let mut bests = std::collections::HashMap::<&'static str, Vec<&'static str>>::new();
@@ -18,7 +18,7 @@ fn pass(lexicon: &[&'static str]) -> (&'static str, Vec<&'static str>) {
 }
 
 fn main() {
-    let mut guess = pass(&POSSIBLE_WORDS);
+    let mut guess = pass(&SETTABLE_WORDS);
     while guess.1.len() > 1 {
         println!("{}: {}", guess.0, guess.1.len());
         guess = pass(&guess.1);
